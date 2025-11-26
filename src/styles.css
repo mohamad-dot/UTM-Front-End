@@ -1,0 +1,29 @@
+*{box-sizing:border-box}
+html,body,#root{height:100%;margin:0}
+body{background:#0f172a;color:#e5e7eb;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Arial,'Apple Color Emoji','Segoe UI Emoji'}
+.app-shell{display:grid;grid-template-columns:260px 1fr;min-height:100vh}
+.sidebar{background:#0b1220;border-right:1px solid rgba(255,255,255,.06);display:flex;flex-direction:column}
+.brand{padding:16px;font-size:20px;font-weight:800;letter-spacing:.3px}
+.nav{padding:8px;display:flex;flex-direction:column;gap:6px}
+.nav-item{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:10px;color:#a5b4fc;text-decoration:none}
+.nav-item .dot{width:6px;height:6px;border-radius:9999px;background:#475569}
+.nav-item:hover{background:rgba(99,102,241,.08)}
+.nav-item.is-active{background:rgba(99,102,241,.18);color:#fff}
+.sidebar-footer{margin-top:auto;padding:12px 16px;font-size:12px;color:#94a3b8}
+.app-main{display:grid;grid-template-rows:auto 1fr}
+.page-header{height:52px;display:flex;align-items:center;padding:0 16px;border-bottom:1px solid rgba(255,255,255,.06);background:#0b1222}
+.page-header .title{font-weight:600;color:#c7d2fe}
+.app-content{padding:16px}
+.page{padding:8px}
+.cards{display:grid;gap:16px;grid-template-columns:repeat(12,1fr)}
+.card{grid-column:span 4;background:#0b1325;border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:16px}
+.card .muted{color:#94a3b8}.card .actions{display:flex;gap:8px;margin-top:8px}
+.btn{background:#6366f1;border:none;color:white;padding:8px 12px;border-radius:8px;cursor:pointer}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,.15);color:#cbd5e1}
+.btn:hover{opacity:.95}
+.map-wrapper{position:relative;height:calc(100vh - 120px);border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,.06)}
+.map{position:absolute;inset:0}
+.map-toggles{position:absolute;left:14px;top:14px;z-index:2;background:rgba(11,18,32,.92);border:1px solid rgba(255,255,255,.08);padding:12px;border-radius:10px;display:flex;flex-direction:column;gap:8px}
+.map-toggles label{display:flex;align-items:center;gap:8px;font-size:14px}
+@media (max-width:1100px){.card{grid-column:span 6}}
+@media (max-width:700px){.app-shell{grid-template-columns:1fr}.card{grid-column:span 12}}
