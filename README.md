@@ -2,4 +2,4 @@
 
 - `npm install`
 - `npm run dev`
-Make sure your backend (`/v1/zones`, `/v1/notams`, `/v1/dfp/*`) is available at `VITE_API_BASE`.
+  My backend have (`/v1/zones`, `/v1/notams`, `/v1/dfp/*`) is available at `VITE_API_BASE`.
